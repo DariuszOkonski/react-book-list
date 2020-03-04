@@ -1,13 +1,2 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #282c34;
-  min-height: 100vh;
-  color: white;
-}
+@import 'variables';
+@import 'reset';
