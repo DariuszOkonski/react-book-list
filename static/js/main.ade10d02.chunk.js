@@ -1,2 +1,0 @@
-(this["webpackJsonp019-book-list"]=this["webpackJsonp019-book-list"]||[]).push([[0],{3:function(e,t,n){e.exports=n(9)},8:function(e,t,n){},9:function(e,t,n){"use strict";n.r(t);var o=n(0),a=n.n(o),r=n(2),s=n.n(r);n(8);var c=function(){return a.a.createElement("div",{className:"App"},a.a.createElement("h1",null,"Book list 1"))};s.a.render(a.a.createElement(c,null),document.getElementById("root"))}},[[3,1,2]]]);
-//# sourceMappingURL=main.ade10d02.chunk.js.map
