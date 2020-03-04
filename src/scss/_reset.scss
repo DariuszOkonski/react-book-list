@@ -47,10 +47,6 @@ a {
   font-weight: 300;
 }
 
-.active {
-  font-weight: 500;
-}
-
 h2 {
   font-size: 1.4rem;
 }
@@ -58,4 +54,13 @@ h2 {
 p,
 li {
   font-size: 0.8rem;
+}
+
+.active {
+  font-weight: 500;
+}
+
+.view {
+  min-height: 40vh;
+  background-color: $gray-lighter-one;
 }
