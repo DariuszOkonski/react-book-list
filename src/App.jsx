@@ -6,11 +6,11 @@ import Navigation from './components/Navigation';
 function App() {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <header className="app">
+      <main className="app">
         <Navigation />
 
         <Header />
-      </header>
+      </main>
     </BrowserRouter>
   );
 }
