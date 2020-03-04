@@ -11,7 +11,7 @@ const Header = ({ title }) => {
 }
 
 Header.defaultProps = {
-  title: 'Book List'
+  title: 'Book-List-App'
 }
 
 Header.propTypes = {
