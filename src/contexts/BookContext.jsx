@@ -9,7 +9,7 @@ const BookContextProvider = (props) => {
     { id: 2, author: 'Stieg Larsen', title: 'Girl with the dragon tattoo' },
     { id: 3, author: 'Marion Puzo', title: 'The Goodfather' },
     { id: 4, author: 'Dan Brown', title: 'The DaVinci Code' },
-  ])
+  ]);
 
   return (
     <BookContext.Provider value={{ books, dispatch }}>
