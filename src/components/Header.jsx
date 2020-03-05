@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
+import { BookContext } from '../contexts/BookContext';
 
 const Header = ({ title }) => {
+  const { books } = useContext(BookContext);
   return (
-    <header id="header">
+
+    < header id="header" >
       <h2 className="head">{title}</h2>
-      <p className="paragraph">Currently you have 2 books to get through</p>
-    </header>
+      <p className="paragraph">Currently you have {books.length} books to get through</p>
+    </header >
   );
 }
 
