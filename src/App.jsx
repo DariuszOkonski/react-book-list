@@ -2,20 +2,24 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import BookList from './views/BookList';
+import BookContextProvider from './contexts/BookContext';
 
 function App() {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <main className="app">
-        <Navigation />
+      <BookContextProvider>
 
-        <section className="view">
+        <main className="app">
+          <Navigation />
 
-          <BookList />
+          <section className="view">
+
+            <BookList />
 
 
-        </section>
-      </main>
+          </section>
+        </main>
+      </BookContextProvider>
     </BrowserRouter>
   );
 }
