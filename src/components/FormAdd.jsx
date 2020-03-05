@@ -1,14 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { useHistory } from 'react-router-dom';
+import { BookContext } from '../contexts/BookContext';
+import { ADD_BOOK } from '../types/types';
 
 const FormAdd = () => {
+  const { dispatch } = useContext(BookContext);
   const history = useHistory();
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('submit')
+
+    dispatch({
+      type: ADD_BOOK, book: {
+        title, author
+      }
+    });
 
     setTitle('');
     setAuthor('');
