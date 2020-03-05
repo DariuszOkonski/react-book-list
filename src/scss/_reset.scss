@@ -64,3 +64,21 @@ li {
   min-height: 40vh;
   background-color: $gray-lighter-one;
 }
+
+.btn {
+  display: block;
+  font-size: 0.8;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  min-width: 80px;
+  margin: 0.2rem;
+  border: none;
+  padding: 0.2rem 0.5rem;
+  background-color: $gray-darken-one;
+  color: $white;
+  cursor: pointer;
+  transition: .2s;
+
+  &:hover {
+    background-color: darken($color: $gray-darken-one, $amount: 5%);
+  }
+}
