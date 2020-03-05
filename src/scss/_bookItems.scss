@@ -1,0 +1,30 @@
+#book-itmes {
+  padding: 1rem 0.5rem;
+}
+
+#book-item {
+  background-color: $gray-lighter-two;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media(min-width: $desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .left {
+    text-align: center;
+    // background-color: blue;
+  }
+
+  .right {
+    // background-color: brown;
+
+    display: flex;
+  }
+}
