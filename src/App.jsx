@@ -3,6 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import BookList from './views/BookList';
 import BookContextProvider from './contexts/BookContext';
+import AddBook from './views/AddBook';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
           <section className="view">
 
             <BookList />
-
+            <AddBook />
 
           </section>
         </main>
