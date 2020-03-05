@@ -4,8 +4,8 @@ import { BookContext } from '../contexts/BookContext';
 
 const Header = ({ title }) => {
   const { books } = useContext(BookContext);
-  return (
 
+  return (
     < header id="header" >
       <h2 className="head">{title}</h2>
       <p className="paragraph">Currently you have {books.length} books to get through</p>
