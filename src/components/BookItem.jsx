@@ -1,11 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const BookItem = () => {
+const BookItem = ({ id, title, author }) => {
   return (
     <li id="book-item">
       <section className="left">
-        <p><strong>Author</strong></p>
-        <p>Title</p>
+        <p><strong>{author}</strong></p>
+        <p>{title}</p>
       </section>
 
       <section className="right">
@@ -14,6 +15,12 @@ const BookItem = () => {
       </section>
     </li>
   );
+}
+
+BookItem.propsTypes = {
+  id: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
 }
 
 export default BookItem;
