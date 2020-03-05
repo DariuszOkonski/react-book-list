@@ -25,7 +25,7 @@ body {
 .app {
   margin-left: auto;
   margin-right: auto;
-  background-color: green;
+  background-color: $gray-lighter-one;
   width: 100%;
   max-width: 700px;
 }
@@ -63,6 +63,7 @@ li {
 .view {
   min-height: 40vh;
   background-color: $gray-lighter-one;
+  padding-bottom: 0.2rem;
 }
 
 .btn {
