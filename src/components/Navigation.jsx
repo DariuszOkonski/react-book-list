@@ -6,7 +6,10 @@ const Navigation = () => {
     <nav id="navigation">
       <ul className="nav-items">
         <li className="nav-item">
-          <NavLink exact to="/">Add Book</NavLink>
+          <NavLink exact to="/">Home</NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink exact to="/add">Add Book</NavLink>
         </li>
         <li className="nav-item">
           <NavLink exact to="/about">About</NavLink>
