@@ -20,11 +20,11 @@ const FormAdd = () => {
 
     setTitle('');
     setAuthor('');
+    history.push('/');
   }
 
   const handleClick = () => {
-    console.log(history)
-    console.log('send to /');
+    history.push('/');
   }
 
   return (
