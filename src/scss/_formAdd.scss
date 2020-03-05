@@ -1,0 +1,28 @@
+#form-add {
+  margin: 1rem 0.5rem;
+  padding: 0.5rem;
+  background-color: $gray-lighter-two;
+
+  input[type="text"] {
+    display: block;
+    width: 100%;
+    font-size: 0.8rem;
+    padding: 0.2rem;
+    margin: 1rem 0;
+    color: $gray-darken-one;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: flex-end;
+
+    // a {
+    //   padding: 0;
+    //   margin: 0px;
+    //   font-size: 0.8rem;
+    //   font-weight: 500;
+    // }
+  }
+}
