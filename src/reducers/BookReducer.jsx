@@ -1,10 +1,10 @@
 import { ADD_BOOK } from '../types/types';
-import uuid from 'uuid/v1';
+import { v1 } from 'uuid'
 
 const bookReducer = (state, action) => {
   switch (action.type) {
     case ADD_BOOK:
-      return [...state, { id: uuid(), title: action.book.title, author: action.book.author }];
+      return [...state, { id: v1(), title: action.book.title, author: action.book.author }];
     default:
       return state;
   }
