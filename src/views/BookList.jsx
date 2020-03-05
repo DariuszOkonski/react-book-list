@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Header from '../components/Header';
+import BookItems from '../components/BookItems';
 
 const BookList = () => {
   return (
-    <div className="view">
+    <Fragment>
       <Header title="Book List" />
-    </div>
+
+      <BookItems />
+    </Fragment>
+
   );
 }
 
