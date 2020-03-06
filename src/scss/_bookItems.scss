@@ -18,7 +18,11 @@
   }
 
   .left {
-    text-align: left;
+    text-align: center;
+
+    @media(min-width: $desktop) {
+      text-align: left;
+    }
   }
 
   .right {
