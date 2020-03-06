@@ -18,8 +18,6 @@ const JunkBook = () => {
     history.push('/');
   }
 
-
-
   return (
     <section id="junk-book">
       <p style={{ marginBottom: '1rem' }} className="paragraph">Do you want to remove book:</p>
