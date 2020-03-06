@@ -1,0 +1,11 @@
+#junk-book {
+  margin: 1rem 0.5rem;
+  padding: 0.5rem;
+  background-color: $gray-lighter-two;
+
+  .btn-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
