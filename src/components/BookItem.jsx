@@ -9,6 +9,10 @@ const BookItem = ({ id, title, author }) => {
     history.push('/remove', { deleteId: id });
   }
 
+  const handleEdit = () => {
+    history.push('/edit', { editId: id });
+  }
+
   return (
     <li id="book-item">
       <section className="left">
@@ -18,7 +22,7 @@ const BookItem = ({ id, title, author }) => {
 
       <section className="right">
         <button onClick={handleDelete} className="btn">Delete</button>
-        <button className="btn">Edit</button>
+        <button onClick={handleEdit} className="btn">Edit</button>
       </section>
     </li>
   );
