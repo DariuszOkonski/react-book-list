@@ -28,7 +28,7 @@ const FormAdd = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit} id="form-add">
+    <form onSubmit={handleSubmit} id="form">
       <div>
         <input
           type="text"
