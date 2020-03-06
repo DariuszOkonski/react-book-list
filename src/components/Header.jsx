@@ -8,7 +8,12 @@ const Header = ({ title }) => {
   return (
     < header id="header" >
       <h2 className="head">{title}</h2>
-      <p className="paragraph">Currently you have {books.length} books to get through</p>
+      {
+        books.length > 0 ?
+          <p className="paragraph">Currently you have {books.length} books to get through</p>
+          :
+          null
+      }
     </header >
   );
 }
