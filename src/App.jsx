@@ -6,6 +6,7 @@ import BookContextProvider from './contexts/BookContext';
 import AddBook from './views/AddBook';
 import Empty from './components/Empty';
 import RemoveBook from './views/RemoveBook';
+import EditBook from './views/EditBook';
 
 function App() {
   return (
@@ -20,12 +21,12 @@ function App() {
               <Route exact path="/" component={BookList} />
               <Route exact path="/add" component={AddBook} />
               <Route exact path="/remove" component={RemoveBook} />
+              <Route exact path="/edit" component={EditBook} />
               <Route render={() => <Empty information="There is no such a route..." />} />
             </Switch>
           </section>
-
           {/* 
-          <RemoveBook />
+          <EditBook />
           <BookList /> */}
 
 
