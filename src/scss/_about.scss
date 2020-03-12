@@ -1,0 +1,10 @@
+#about {
+  background-color: $gray-lighter-two;
+  margin: 1rem 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+
+  @media(min-width: $desktop) {
+    text-align: left;
+  }
+}
