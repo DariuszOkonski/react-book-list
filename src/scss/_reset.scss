@@ -87,3 +87,7 @@ li {
     background-color: darken($color: $gray-darken-one, $amount: 5%);
   }
 }
+
+.btnOff {
+  opacity: 0;
+}
