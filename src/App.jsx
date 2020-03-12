@@ -27,12 +27,6 @@ function App() {
               <Route render={() => <Empty information="There is no such a route..." />} />
             </Switch>
           </section>
-          {/* 
-          <EditBook />
-          <BookList /> */}
-
-
-
         </main>
       </BookContextProvider>
     </BrowserRouter>
