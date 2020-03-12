@@ -7,6 +7,7 @@ import AddBook from './views/AddBook';
 import Empty from './components/Empty';
 import RemoveBook from './views/RemoveBook';
 import EditBook from './views/EditBook';
+import About from './views/About';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
               <Route exact path="/add" component={AddBook} />
               <Route exact path="/remove" component={RemoveBook} />
               <Route exact path="/edit" component={EditBook} />
+              <Route exact path="/about" component={About} />
               <Route render={() => <Empty information="There is no such a route..." />} />
             </Switch>
           </section>
